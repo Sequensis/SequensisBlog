@@ -26,7 +26,16 @@ config = {
     // Configure your URL and mail settings here
     production: {
         url: 'http://sequensis.azurewebsites.net',
-        mail: {},
+        mail: {
+            transport: 'SMTP',
+            options: {
+                service: 'Mailgun',
+                auth: {
+                    user: 'postmaster@blog.sequensis.co.uk',
+                    pass: '6pe50vcgx847'
+                }
+            }
+        },
         database: {
             client: 'sqlite3',
             connection: {
