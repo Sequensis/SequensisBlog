@@ -96,7 +96,12 @@ a.archive-link,
   max-width: 100%;
 }
 article.preview {
-  margin-bottom: 4em;
+  border-top: 1px solid #ecf0f1;
+  padding: 80px 0;
+}
+article.preview:first-child {
+  border-top: none;
+  padding-top: 0;
 }
 article.preview p.readmore {
   font-family: "Open Sans Condensed", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
