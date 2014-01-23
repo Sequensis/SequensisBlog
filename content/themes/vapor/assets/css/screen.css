@@ -56,22 +56,23 @@ li {
   padding-left: 0.8em;
 }
 pre {
+  background: #3F3F3F;
   font-family: "Consolas", Courier, monospace;
   font-size: 1em;
   line-height: 1.2em;
   padding: 1em;
+  overflow: auto;
   white-space: pre;
-  white-space: pre-wrap;
-  white-space: -moz-pre-wrap;
-  white-space: -pre-wrap;
-  white-space: -o-pre-wrap;
-  word-wrap: break-word;
-  background-color: rgba(0, 0, 0, 0.05);
 }
 p code {
   font-family: "Consolas", Courier, monospace;
   font-size: .8em;
   line-height: 1.2em;
+}
+.hljs  {
+    background: none !important;
+    padding: 0 !important;
+  padding-right: 100px;
 }
 h1 {
   color: #151515;
@@ -89,7 +90,7 @@ article.preview,
 a.archive-link,
 .article-nav {
   margin: 20px auto;
-  max-width: 600px;
+  max-width: 960px;
   width: 90%;
 }
 #site-head img {
