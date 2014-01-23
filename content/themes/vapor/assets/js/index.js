@@ -1,17 +1,11 @@
 /**
- * Main JS file for Casper behaviours
+ * Main JS file for Vapor behaviours.
  */
 
-/*globals jQuery, document */
 (function ($, undefined) {
     'use strict';
 
     $(function() {
-        // On the home page, move the blog icon inside the header 
-        // for better relative/absolute positioning.
-
-        //$('#blog-logo').prependTo('#site-head-content');
-
         // Find all comment nodes containing the text 'language: lang-xxx'.
         // Extract the language (the 'lang-xxx' part).
         // Use that for the next <pre><code> block.
