@@ -25,7 +25,7 @@ config = {
     // When running Ghost in the wild, use the production environment
     // Configure your URL and mail settings here
     production: {
-        url: 'http://sequensis.azurewebsites.net',
+        url: 'http://sequensisblog.azurewebsites.net',
         mail: {
             transport: 'SMTP',
             options: {
