@@ -1,14 +1,15 @@
 {{!< default}}
 
 <header id="site-head">
-    {{#if @blog.logo}}<a id="blog-logo" href="{{@blog.url}}"><div class="bloglogo" style="background: url({{@blog.logo}})"></div></a>{{/if}}
+    {{#if @blog.logo}}
+    <a id="blog-logo" href="{{@blog.url}}"><div class="bloglogo" style="background: url({{@blog.logo}})"></div></a>
+    {{/if}}
     <h1 class="blog-title"><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
     <h2 class="blog-description">{{@blog.description}}</h2>
 </header>
 
 <main class="content" role="main">
     {{#foreach posts}}
-
     <article class="preview">
         <header>
             <h1 class="post-title"><a href="{{url}}">{{title}}</a></h1>
@@ -24,7 +25,6 @@
             {{content}}
         </section>
     </article>
-
     {{/foreach}}
 
     {{pagination}}
