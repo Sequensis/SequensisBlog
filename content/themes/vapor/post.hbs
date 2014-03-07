@@ -7,18 +7,16 @@
 </header>
 
 <main class="content" role="main">
-
     <article class="{{post_class}}">
-
         {{#post}}
 
         <header>
-        <h1 class="post-title"><a href="{{url}}">{{title}}</a></h1>
-        <div class="post-meta">
-            <span class="date"><i class="fa fa-calendar-o"></i> <time datetime="{{date format='YYYY-MM-DD'}}">{{date format="dddd, MMMM DD, YYYY"}}</time></span>
-            {{#if tags}}<span class="tags"><i class="fa fa-tag"></i> {{tags separator=", "}}</span>{{/if}}
-            <span class="comments"><i class="fa fa-comment"></i> <a href="{{url}}#disqus_thread" data-disqus-identifier="{{post.id}}">Comments</a></span>
-        </div>
+            <h1 class="post-title"><a href="{{url}}">{{title}}</a></h1>
+            <div class="post-meta">
+                <span class="date"><i class="fa fa-calendar-o"></i> <time datetime="{{date format='YYYY-MM-DD'}}">{{date format="dddd, MMMM DD, YYYY"}}</time></span>
+                {{#if tags}}<span class="tags"><i class="fa fa-tag"></i> {{tags separator=", "}}</span>{{/if}}
+                <span class="comments"><i class="fa fa-comment"></i> <a href="{{url}}#disqus_thread" data-disqus-identifier="{{post.id}}">Comments</a></span>
+            </div>
         </header>
 
         <section class="post-content">
@@ -42,7 +40,6 @@
         </section>
 
         <footer class="post-footer">
-
             {{#if author}}
             <section class="author">
                 <div class="authorimage" style="background: url({{author.image}})"></div>
@@ -51,7 +48,6 @@
                 <p class="bio">{{author.bio}}</p>
             </section>
             {{/if}}
-
         </footer>
 
         {{/post}}
@@ -62,9 +58,7 @@
                 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
             </div>
         </section>
-        
     </article>
-    
 </main>
         
 <script type="text/javascript">
